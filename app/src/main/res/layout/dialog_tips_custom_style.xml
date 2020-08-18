@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_corners"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_custom_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="提示"
+            android:textColor="#000"
+            android:textSize="20dp" />
+        <View
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ECEAEA"
+            android:layout_above="@+id/ll_btn" />
+        <TextView
+            android:id="@+id/dialog_custom_message"
+            android:gravity="center"
+            android:textColor="#676565"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前版本为1.0.01，已是最新版本"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ECEAEA"
+            android:layout_above="@+id/ll_btn" />
+
+        <LinearLayout
+            android:id="@+id/ll_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/dialog_button_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="取消"
+                android:textColor="#0677DA"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/dialog_button_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="确定"
+                android:textColor="#0677DA"
+                android:textSize="17dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
