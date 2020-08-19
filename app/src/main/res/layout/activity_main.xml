@@ -42,8 +42,29 @@
         android:layout_height="wrap_content"/>
     <Button
         android:layout_marginTop="50dp"
-        android:id="@+id/openDialog"
-        android:text="弹出框"
+        android:id="@+id/openDialog1"
+        android:text="弹出框HTML文本"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/openDialog2"
+        android:text="弹出框纯文本"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/openProgressDialog1"
+        android:text="带进度条弹出框topMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/openProgressDialog2"
+        android:text="带进度条弹出框bottomMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

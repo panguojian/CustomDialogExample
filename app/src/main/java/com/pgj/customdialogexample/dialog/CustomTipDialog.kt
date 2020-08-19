@@ -3,6 +3,7 @@ package com.pgj.customdialogexample.dialog
 import android.app.Dialog
 import android.content.Context
 import android.text.Spanned
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
@@ -30,15 +31,17 @@ class CustomTipDialog(context: Context) : Dialog(context, R.style.DialogTheme) {
         setContentView(view)
     }
 
-    fun title(title:String){
+    fun setTitle(title:String){
         mTvTitle.text=title
     }
 
-    fun message(message:String){
+    fun setMessage(message:String){
+        mTvMessage.gravity=Gravity.CENTER
         mTvMessage.text=message
     }
 
-    fun message(message:Spanned){
+    fun setMessage(message:Spanned){
+        mTvMessage.gravity=Gravity.LEFT
         mTvMessage.text=message
     }
 
